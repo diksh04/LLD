@@ -1,0 +1,34 @@
+LLD
+1. It major focuses on classes & objects within a system
+2. HLD -> LLD -> actual code
+3. Goal is to 
+    1. Write clean code
+    2. Code should be flexible & maintainable
+    3. Code should be easy to test
+4. Categories of LLD
+    1. Creational -> It controls the object creation. Eg: Singleton,Builder,Factory,Abstract Factory,Object Pool, Prototype
+    2. Structural -> It focus on how different classes & objects are arranged together so that a large problem can be solved in most flexible way, Eg: Decorator,Proxy,Composite,Adapter,Bridge,Facade,Flyweight
+    3. Behavioral -> It focuses on how different objects interact with each other. Like in other words, structural pattern are the skeleton of the system, but how the skeleton behaves (coordination,responsibilty,interaction) is all guided by behaviour pattern. Eg: State,Strategy,Observer,Chain of responsibility,Template,Iterator,Interpreter,Command,Visitor,Mediator,Memento,null object
+5.  Is-A is nothing but a inheritance
+    1. Vehicle is a 2 wheeler & Vehicle is a 3 wheeler  (multiple inheritance)
+6. Has-A shows a link between 2 objects, also known as association (——> symbol)
+    1. House has rooms
+    2. Library has books
+    3. School has students
+    4. Association has 2 parts 
+        1. Aggregation (weak relationship) -> Existence of one object is not dependent on the other. Eg: Library has books. Here both are independent of each other if books are not present Library can still exist, similarly if library doesn’t exist books can still exist alone. 
+        2.  Library ⃟- - - -books
+        3. Public class Library {
+        4.  List<Books>books;
+        5. }
+        6. Composition (strong relationship) -> Existence of one object is dependent on other. Eg: House has rooms, here rooms existence is depends on the house,if house doesn’t exists, rooms also will not exist. 
+        7. house⬥———rooms 
+        8. Public class House {
+        9. List<Rooms>rooms;
+        10. // also take care of the creation & managing of room objects 
+        11. Public hosue(){
+        12. rooms = new ArrayList<>():
+        13. rooms.add(new Room(“living room”));
+        14. rooms.add(new Room(“dinning room”)):
+        15. }
+        16. } 
