@@ -1,0 +1,5 @@
+what is the open/closed principle (OCP)?
+Open/closed principle states that "A class should be open to extension but closed for modification"
+This means a new functionality can be added through extension(inheritance,composition,interfaces) rather
+than modifying existing code. An existing code is already tested and deployed in production,adding
+modifications would introduce an additional risk and require additional testing effort.
