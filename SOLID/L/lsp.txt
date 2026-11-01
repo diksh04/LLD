@@ -1,0 +1,7 @@
+What is the Liskov Substitution Principle (LSP)?
+Liskov Substitution Principle(LSP) states that the object of superclass should be replacable with 
+objects of its subclass without breaking the application
+
+That means, if class B is a subtype of class A, then we should be able to replace 
+objects of A with B without breaking the behaviour of the program. 
+Subclass should extend the capability of the parent class, not narrow it down.
